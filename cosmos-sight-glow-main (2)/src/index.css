@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Space theme - Deep cosmic colors */
+    --background: 213 100% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 215 28% 9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 28% 9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 258 90% 66%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 217 19% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 217 19% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 258 90% 66%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217 19% 15%;
+    --input: 217 19% 15%;
+    --ring: 258 90% 66%;
+
+    /* Space-specific design tokens */
+    --space-deep: 213 100% 6%;
+    --space-medium: 217 28% 12%;
+    --space-light: 217 19% 18%;
+    
+    --neon-purple: 258 90% 66%;
+    --neon-blue: 217 91% 60%;
+    --cosmic-white: 0 0% 98%;
+    
+    /* Gradients */
+    --gradient-space: linear-gradient(135deg, hsl(213 100% 6%), hsl(217 28% 12%));
+    --gradient-nebula: linear-gradient(135deg, hsl(258 90% 66% / 0.1), hsl(217 91% 60% / 0.1));
+    --gradient-cosmic: linear-gradient(180deg, hsl(213 100% 6%), hsl(215 28% 9%));
+    
+    /* Effects */
+    --glow-purple: 0 0 20px hsl(258 90% 66% / 0.3);
+    --glow-blue: 0 0 20px hsl(217 91% 60% / 0.3);
+    --shadow-space: 0 8px 32px hsl(213 100% 6% / 0.4);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode uses same space theme */
+    --background: 213 100% 6%;
+    --foreground: 0 0% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-space);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-sm border border-white/10 bg-white/5;
+    box-shadow: var(--shadow-space);
+  }
+  
+  .glow-purple {
+    box-shadow: var(--glow-purple);
+  }
+  
+  .glow-blue {
+    box-shadow: var(--glow-blue);
+  }
+  
+  .starfield {
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, #fff, transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+      radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
+      radial-gradient(2px 2px at 160px 30px, #fff, transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: twinkle 20s linear infinite;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
