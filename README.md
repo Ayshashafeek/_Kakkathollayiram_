@@ -31,17 +31,17 @@ It also includes upcoming features like Star Stories and About Us sections.
 - Click the **Fork** button on GitHub to create your own copy of this repo.
 
 ### 2️⃣ Clone Your Fork
-
 git clone https://github.com/YOUR_USERNAME/YOUR_FORKED_REPO.git
 cd YOUR_FORKED_REPO
-
 ### 3️⃣ Install Dependencies
-
+bash
+Copy code
 npm install
-
-4️⃣ Start the Development Server
-
+###4️⃣ Start the Development Server
+bash
+Copy code
 npm run dev
+Open http://localhost:5173 in your browser.
 
 ✏️ Editing the Project
 Components are in src/components/
@@ -53,12 +53,11 @@ Assets (images, backgrounds) are in src/assets/
 Make your changes directly in these folders.
 
 5️⃣ Commit & Push
-
-
+bash
+Copy code
 git add .
 git commit -m "Describe your changes"
 git push origin main
-
 6️⃣ Optional: Pull Requests
 To contribute back to the original repository, create a Pull Request from your fork to this repo.
 
