@@ -40,7 +40,7 @@ cd YOUR_FORKED_REPO
 
 npm install
 
-###4️⃣ Start the Development Server
+### 4️⃣ Start the Development Server
 
 npm run dev
 Open http://localhost:5173 in your browser.
@@ -54,13 +54,13 @@ Assets (images, backgrounds) are in src/assets/
 
 Make your changes directly in these folders.
 
-5️⃣ Commit & Push
+### 5️⃣ Commit & Push
 
 git add .
 git commit -m "Describe your changes"
 git push origin main
 
-6️⃣ Optional: Pull Requests
+### 6️⃣ Pull Requests
 To contribute back to the original repository, create a Pull Request from your fork to this repo.
 
 🌐 Deployment
