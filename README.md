@@ -34,6 +34,7 @@ It also includes upcoming features like Star Stories and About Us sections.
 ### 2️⃣ Clone Your Fork
 
 git clone https://github.com/YOUR_USERNAME/YOUR_FORKED_REPO.git
+
 cd YOUR_FORKED_REPO
 
 ### 3️⃣ Install Dependencies
