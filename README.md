@@ -64,7 +64,7 @@ git push origin main
 To contribute back to the original repository, create a Pull Request from your fork to this repo.
 
 🌐 Deployment
-This project is deployed on Vercel: Public URL
+This project is deployed on Vercel: https://kakkathollayiram-y197.vercel.app/
 
 Anyone can access this URL without logging in.
 
