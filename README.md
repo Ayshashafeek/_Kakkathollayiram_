@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
 
-## Project info
+# Kakkathollayiram – Star Counter
 
-**URL**: https://lovable.dev/projects/eab1266f-727a-40fa-8818-38d0d810ee03
+**Discover the cosmos and count stars with our AI-powered star detection app!**
 
-## How can I edit this code?
+## 🔹 Project Overview
 
-There are several ways of editing your application.
+Kakkathollayiram lets users upload night sky images and automatically counts stars using AI.
+It also includes upcoming features like Star Stories and About Us sections.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/eab1266f-727a-40fa-8818-38d0d810ee03) and start prompting.
+## 🔹 Live Demo
 
-Changes made via Lovable will be committed automatically to this repo.
+[View Live Project](https://kakkathollayiram-y197.vercel.app/)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🔹 Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* **React** with TypeScript
+* **Vite** for fast development
+* **Tailwind CSS** and **shadcn-ui** for UI
+* **Vercel** for deployment
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 💻 How to Run Locally
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 1️⃣ Fork the Repository
+- Click the **Fork** button on GitHub to create your own copy of this repo.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 2️⃣ Clone Your Fork
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+git clone https://github.com/YOUR_USERNAME/YOUR_FORKED_REPO.git
+cd YOUR_FORKED_REPO
+
+### 3️⃣ Install Dependencies
+
+npm install
+
+4️⃣ Start the Development Server
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+✏️ Editing the Project
+Components are in src/components/
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Pages are in src/pages/
 
-**Use GitHub Codespaces**
+Assets (images, backgrounds) are in src/assets/
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Make your changes directly in these folders.
 
-## What technologies are used for this project?
+5️⃣ Commit & Push
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+git add .
+git commit -m "Describe your changes"
+git push origin main
 
-## How can I deploy this project?
+6️⃣ Optional: Pull Requests
+To contribute back to the original repository, create a Pull Request from your fork to this repo.
 
-Simply open [Lovable](https://lovable.dev/projects/eab1266f-727a-40fa-8818-38d0d810ee03) and click on Share -> Publish.
+🌐 Deployment
+This project is deployed on Vercel: Public URL
 
-## Can I connect a custom domain to my Lovable project?
+Anyone can access this URL without logging in.
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+📜 License
+This project is open-source and free to use for learning and personal projects.
